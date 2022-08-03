@@ -126,7 +126,7 @@ nav{
     justify-content: center;
     align-items: center;
 }
-#work h1,p,h2,#contacts h1{
+h1,p,h2{
     text-align: center;
 }
 
