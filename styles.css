@@ -52,6 +52,7 @@ nav{
 }
 #bars{
     text-align: right;
+    padding: 10px 0px;
 }
 #header a:hover{
     background-color: var(--body-color);
@@ -60,7 +61,7 @@ nav{
 .button a{
     text-decoration: none;
     background-color: var(--white);
-    font-size: 25pt;
+    font-size: 30pt;
     color: #333333;
     border-radius: 1px;
     width: 50px;
@@ -73,7 +74,7 @@ nav{
     background-color: var(--blue);
 }
 #header nav ul{
-    display: flex;
+    display: none;
     flex-direction: column;
     list-style-type: none;
 }
