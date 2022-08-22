@@ -107,8 +107,19 @@ footer a:hover{
     color: aqua !important;
 }
 @media(max-width:576px){
-    .margin{
+    #contacts-link li:nth-child(3){
+    
         margin-top: 8px;
-        margin-bottom: 8px;
+        margin-bottom: 8px;    
     }
+    
+}
+
+@media(max-width:405px){
+    #contacts-link li:nth-child(3),#contacts-link li:nth-child(2){
+    
+        margin-top: 8px;
+        margin-bottom: 8px;    
+    }
+    
 }
