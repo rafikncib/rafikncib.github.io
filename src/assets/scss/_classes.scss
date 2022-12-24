@@ -1,0 +1,86 @@
+.black{
+    color: $_third_color;
+}
+.yellow{
+    color: #D16014;
+}
+.gray{
+    color: $_fifth_color;
+}
+
+.btn{
+    background-color:$_third_color !important;
+    color: $_primary_color !important;
+    transition: all .5s ease-out !important;
+}
+
+.btn:hover{
+    background-color: $_forth_color !important;
+    color: $_primary_color !important;
+}
+.info{
+    background-color: $_primary_color;
+    
+}
+.bg-gray{
+    background-color: $_secondary_color;
+
+}
+
+.nav .nav-item .nav-link{
+    background-color: $_forth_color;
+}
+.personalPic{
+    height: 500px !important;
+    width: 100%;
+    background-color: $_secondary_color;
+}
+.project{
+    position: relative;
+    overflow: hidden;
+}
+
+.worksPic{
+    height: 482px;
+    width: 100%;
+    transition: all .5s;
+}
+.description{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: all 1.5s ease-out;
+}
+
+.project:hover .description{
+    transform: translateY(0);
+}
+.project:hover .worksPic{
+    transform:scale(1.1) ;
+}
+.pointer{
+    cursor: pointer;
+}
+
+
+.body_size{
+    font-size: $_font_size_body !important;
+}
+.title_size{
+    font-size: $_font_size_title !important;
+}
+.section_title{
+    font-size: $_font_size_section_head !important;
+}
+p{
+    font-size: $_font_size_paragraph !important;
+}
+
+.heading{
+    font-size: $_font_size_heading
+}
+
+
+a:hover{
+    color: $_forth_color;
+}

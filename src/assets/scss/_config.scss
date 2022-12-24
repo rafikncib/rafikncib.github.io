@@ -1,0 +1,67 @@
+$_primary_color:#fffbfe;
+$_secondary_color:#EAECFF;
+$_third_color:#040F0F;
+$_forth_color:#D16014;
+$_fifth_color:#57737A;
+
+$_font_size_body:1rem;
+$_font_size_title:2em;
+$_font_size_section_head:2.7em;
+$_font_size_paragraph:1em;
+$_font_size_heading:3.5em;
+$_font_size_nav:1.3em;
+.seriffont{
+  font-family: 'Libre Bodoni', serif;
+}
+.sansSerifFont{
+  font-family: 'Open Sans', sans-serif;
+}
+.desc {
+  width:5Opx;
+  height:5Opx;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite 2s linear;
+}
+
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 300px;}
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }  
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }  
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str}; 
+  animation-timing-function: linear;
+     
+}
+
+@include keyframes(slide-down) {
+  from { 
+        top: Opx; 
+      }
+    to  {top:-300px;}
+}

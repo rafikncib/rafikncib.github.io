@@ -1,0 +1,12 @@
+#introduceContent{
+    background-color: $_primary_color;
+    
+    h1,h2{
+        color: $_third_color;
+        font-weight: 800;
+    }
+    .btn{
+        background-color:$_third_color;
+        color: $_primary_color;
+    }
+}

@@ -1,0 +1,181 @@
+.seriffont {
+  font-family: "Libre Bodoni", serif;
+}
+
+.sansSerifFont {
+  font-family: "Open Sans", sans-serif;
+}
+
+.desc {
+  width: 5Opx;
+  height: 5Opx;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s infinite 2s linear;
+          animation: mymove 5s infinite 2s linear;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 300px;
+  }
+}
+
+@keyframes mymove {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 300px;
+  }
+}
+@-webkit-keyframes slide-down {
+  from {
+    top: Opx;
+  }
+  to {
+    top: -300px;
+  }
+}
+@keyframes slide-down {
+  from {
+    top: Opx;
+  }
+  to {
+    top: -300px;
+  }
+}
+#headerContent {
+  background-color: #EAECFF;
+}
+#headerContent .nav-link {
+  color: #040F0F;
+  font-size: 1.3em;
+}
+
+#introduceContent {
+  background-color: #fffbfe;
+}
+#introduceContent h1, #introduceContent h2 {
+  color: #040F0F;
+  font-weight: 800;
+}
+#introduceContent .btn {
+  background-color: #040F0F;
+  color: #fffbfe;
+}
+
+#aboutContent {
+  background-color: #EAECFF;
+}
+#aboutContent .btn {
+  background-color: #040F0F;
+  color: #fffbfe;
+}
+
+.black {
+  color: #040F0F;
+}
+
+.yellow {
+  color: #D16014;
+}
+
+.gray {
+  color: #57737A;
+}
+
+.btn {
+  background-color: #040F0F !important;
+  color: #fffbfe !important;
+  transition: all 0.5s ease-out !important;
+}
+
+.btn:hover {
+  background-color: #D16014 !important;
+  color: #fffbfe !important;
+}
+
+.info {
+  background-color: #fffbfe;
+}
+
+.bg-gray {
+  background-color: #EAECFF;
+}
+
+.nav .nav-item .nav-link {
+  background-color: #D16014;
+}
+
+.personalPic {
+  height: 500px !important;
+  width: 100%;
+  background-color: #EAECFF;
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+}
+
+.worksPic {
+  height: 482px;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  transition: all 1.5s ease-out;
+}
+
+.project:hover .description {
+  transform: translateY(0);
+}
+
+.project:hover .worksPic {
+  transform: scale(1.1);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.body_size {
+  font-size: 1rem !important;
+}
+
+.title_size {
+  font-size: 2em !important;
+}
+
+.section_title {
+  font-size: 2.7em !important;
+}
+
+p {
+  font-size: 1em !important;
+}
+
+.heading {
+  font-size: 3.5em;
+}
+
+a:hover {
+  color: #D16014;
+}
+
+#educExperContent {
+  background-color: #EAECFF;
+}
+
+#portfolio {
+  background-color: #fffbfe;
+}/*# sourceMappingURL=main.css.map */
