@@ -81,8 +81,20 @@
   color: #040F0F;
 }
 
+.white {
+  color: #EAECFF;
+}
+
+.bg-black {
+  background-color: #040F0F;
+}
+
 .yellow {
   color: #D16014;
+}
+
+.bg-yellow {
+  background-color: #D16014;
 }
 
 .gray {
@@ -169,7 +181,11 @@ p {
 }
 
 a:hover {
-  color: #D16014;
+  color: #D16014 !important;
+}
+
+.nav-link.active {
+  font-weight: 800;
 }
 
 #educExperContent {

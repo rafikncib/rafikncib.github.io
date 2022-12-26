@@ -1,8 +1,17 @@
 .black{
     color: $_third_color;
 }
+.white{
+    color: $_secondary_color;
+}
+.bg-black{
+    background-color: $_third_color;
+}
 .yellow{
-    color: #D16014;
+    color: $_forth_color;
+}
+.bg-yellow{
+    background-color: $_forth_color;
 }
 .gray{
     color: $_fifth_color;
@@ -82,5 +91,9 @@ p{
 
 
 a:hover{
-    color: $_forth_color;
+    color: $_forth_color !important;
+}
+
+.nav-link.active{
+    font-weight: 800;
 }

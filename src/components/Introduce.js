@@ -2,7 +2,7 @@ import mypic from "../assets/images/mypic.jpg";
 const Introduce=()=>{
     return(
         <div id="introduceContent">
-            <div className="container pt-5">
+            <div className="container pt-5 mt-5">
                 <div className="row">
                     <div className="col-7">
                         <section>

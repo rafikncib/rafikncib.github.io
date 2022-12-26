@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
-import experienceSlice from './experience'
+import educationsExperiencesSlice from './educations_experiences'
 const store=configureStore({
     reducer:{
 
-        experience:experienceSlice.reducer,
+        experiences:educationsExperiencesSlice.reducer,
 
     },
 })
