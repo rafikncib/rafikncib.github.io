@@ -10,10 +10,10 @@ const About=()=>{
                 </header>
                 <section className="py-4">
                     <div className="row">
-                        <div className="col">
+                        <div className="col-12 col-md-6">
                             <img src={mypic} alt="" className="personalPic"/>
                         </div>
-                        <div className="col">
+                        <div className="col-12 col-md-6">
                             <section>
                                 <header>
                                     <h2>I'm Rafik Ncib</h2>

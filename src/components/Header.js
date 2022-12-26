@@ -3,7 +3,7 @@ const Header=()=>{;
     return(
         <div id="headerContent" className='fixed-top shadow-lg'>
             <header className="container">
-                <nav className="navbar navbar-expand-lg ">
+                <nav className="navbar navbar-expand-md ">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="./"><img src={logo} alt="logo of my portfolio" style={{width:'80px'}}/></a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">

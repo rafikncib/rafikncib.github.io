@@ -6,19 +6,19 @@ const Projects=()=>{
             <div className="container">
                 <h2>Web developmet</h2>
                 <div className="row gy-2">
-                    <div className="col-4">
+                    <div className="col-12 col-md-4">
                         <Project />
                     </div>
-                    <div className="col-4">
+                    <div className="col-12 col-md-4">
                         <Project />
                     </div>
-                    <div className="col-4">
+                    <div className="col-12 col-md-4">
                         <Project />
                     </div>
-                    <div className="col-4">
+                    <div className="col-12 col-md-4">
                         <Project />
                     </div>
-                    <div className="col-4">
+                    <div className="col-12 col-md-4">
                         <Project />
                     </div>
                 </div>
