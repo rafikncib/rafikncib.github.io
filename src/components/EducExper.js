@@ -13,7 +13,7 @@ const EducExper=()=>{
     
     
     return(
-        <div id="educExperContent">
+        <div id="educExperContent" className="pt-5">
             <div className="container pt-5 pb-4">
                 <header className="text-center">
                     <h1 className="black section_title">EDUCATION & <span className="yellow">EXPERIENCES</span></h1>

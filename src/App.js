@@ -9,7 +9,7 @@ import Works from "./components/Works";
 
 const App=()=>{
   return(
-    <div id="portfolio" className="seriffont" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    <div id="portfolio" className="seriffont pt-5" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
       <Header />
       <Introduce />
       <About />

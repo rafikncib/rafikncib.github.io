@@ -2,7 +2,7 @@ import Projects from "./Projects";
 
 const Works=()=>{
     return(
-        <div id="worksContent">
+        <div id="worksContent" className="pt-5">
             <div className="container pt-5">
                 <header className="text-center">
                     <h1 className="black section_title">My <span className="yellow">PORTFOLIO</span></h1>

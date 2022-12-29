@@ -1,8 +1,9 @@
 import mypic from "../assets/images/mypic.jpg";
+import file from "../assets/pdf/rafikWebDeveloppeur_2.pdf";
 
 const About=()=>{
     return(
-        <div id="aboutContent">
+        <div id="aboutContent" className=" pt-5">
             <div className="container pt-5">
                 <header className="text-center">
                     <h1 className="black section_title">About <span className="yellow">Me</span></h1>
@@ -41,7 +42,7 @@ const About=()=>{
                                             <p>Freelance: Available</p>
                                         </div>
                                     </div>
-                                    <p><a href="RafikNcib_CV.pdf" className="btn boutton">Download CV <span><i class="fas fa-download"></i></span></a></p>
+                                    <p><a href={file} className="btn" target="_blank" title="Rafik portfolio">Download CV <span><i class="fas fa-download"></i></span></a></p>
                                 </div>
                             </section>
                         </div>
