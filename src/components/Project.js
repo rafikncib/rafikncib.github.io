@@ -7,7 +7,7 @@ const Project=()=>{
                 <div className="container description bg-black rounded-top px-2 py-3 text-center ">
                         <h3 className="yellow">Web Design</h3>
                         <p className="white sansSerifFont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, rerum!</p>
-                        <a href="#" className="btn btn-dark">View Full Project</a>
+                        <a href="https://frolicking-selkie-98c32f.netlify.app/" className="btn btn-dark">View Full Project</a>
                 </div>
             </div>
         </div>

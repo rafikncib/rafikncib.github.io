@@ -10,14 +10,14 @@ const About=()=>{
                 </header>
                 <section className="py-4">
                     <div className="row">
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 mb-3">
                             <img src={mypic} alt="" className="personalPic"/>
                         </div>
                         <div className="col-12 col-md-6">
                             <section>
                                 <header>
                                     <h2>I'm Rafik Ncib</h2>
-                                    <p>A freelancer.</p>
+                                    <p className="text-capitalize font-italic fw-bold fst-italic">A freelancer.</p>
                                 </header>
                                 <p className="sansSerifFont">
                                     I design and develop services for customers specializing creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through meaningful interactions. check out my Portfolio.

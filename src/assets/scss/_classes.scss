@@ -97,3 +97,23 @@ a:hover{
 .nav-link.active{
     font-weight: 800;
 }
+
+
+@media (max-width: 767.98px) { 
+    
+    .title_size{
+        font-size: $_font_size_title !important;
+    }
+    .section_title{
+        font-size: 1.7em !important;
+    }
+    
+    
+    .heading{
+        font-size: 3em;
+    }
+    .margin{
+        margin-top: 12px !important;
+        margin-bottom: 12px;
+    }
+ }
