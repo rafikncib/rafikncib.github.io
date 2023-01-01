@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.9581112e.css",
-    "main.js": "/static/js/main.c8dd40b9.js",
+    "main.js": "/static/js/main.227284f3.js",
     "static/media/rafikWebDeveloppeur_2.pdf": "/static/media/rafikWebDeveloppeur_2.fb4bf9404370024bd681.pdf",
     "static/media/mypic.jpg": "/static/media/mypic.8053b62edaa5fd1f5d18.jpg",
     "static/media/1.png": "/static/media/1.887081c556fb28713780.png",
     "index.html": "/index.html",
     "main.9581112e.css.map": "/static/css/main.9581112e.css.map",
-    "main.c8dd40b9.js.map": "/static/js/main.c8dd40b9.js.map"
+    "main.227284f3.js.map": "/static/js/main.227284f3.js.map"
   },
   "entrypoints": [
     "static/css/main.9581112e.css",
-    "static/js/main.c8dd40b9.js"
+    "static/js/main.227284f3.js"
   ]
 }
