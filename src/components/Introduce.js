@@ -14,7 +14,7 @@ const Introduce=()=>{
                         </section>
                     </div>
                     <div className="col-12 col-md-5">
-                        <img src={mypic} alt="" className="personalPic rounded-2"/>
+                        <img src={mypic} alt="my own picture" className="personalPic rounded-2"/>
                     </div>
                 </div>
             </div>

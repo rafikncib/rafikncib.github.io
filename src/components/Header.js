@@ -14,7 +14,7 @@ const Header=()=>{;
                                 <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
                                     <a className="navbar-brand" href="./"><img src={logo} alt="logo of my portfolio" style={{width:'80px'}}/></a>
                                 </h5>
-                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0 offcanvas-body">
                                 <li className="nav-item">

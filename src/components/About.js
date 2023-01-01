@@ -12,7 +12,7 @@ const About=()=>{
                 <section className="py-4">
                     <div className="row">
                         <div className="col-12 col-md-6 mb-3">
-                            <img src={mypic} alt="" className="personalPic"/>
+                            <img src={mypic} alt="my own picture" className="personalPic"/>
                         </div>
                         <div className="col-12 col-md-6">
                             <section>
