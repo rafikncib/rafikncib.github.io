@@ -108,7 +108,7 @@ const Contact=()=>{
                             <form action='' className='p-4 rounded-2 shadow-lg' onSubmit={handleSubmit} style={styleForm}> 
                                 <div>
                                   <label htmlFor='firstName' className='form-label'>First name * <span className='text-danger'>{firstName.erreur}</span></label>
-                                  <input name='firstName' id='firstName' value={firstName.input} type='text' placeholder='enter First Name' className='form-control' onChange={e=>{setFirstName(e.target.value)}}/>
+                                  <input name='firstName' id='firstName' value={firstName.input} type='text' placeholder='First Name' className='form-control' onChange={e=>{setFirstName(e.target.value)}}/>
                                 </div>
 
                                 <div>

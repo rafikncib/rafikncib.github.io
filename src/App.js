@@ -7,6 +7,7 @@ import Introduce from "./components/Introduce";
 import Services from "./components/Services";
 import Works from "./components/Works";
 
+import data from "../src/assets/js/data.json";
 const App=()=>{
   return(
     <div id="portfolio" className="seriffont pt-5" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
@@ -15,7 +16,7 @@ const App=()=>{
       <About />
       <EducExper />
       <Services />
-      <Works />
+      <Works projects={data}/>
       <Contact />
       <Footer />
     </div>

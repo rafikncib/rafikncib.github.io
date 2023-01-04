@@ -1,0 +1,53 @@
+{
+       "web_dev":[
+            {
+                "image":"pict.png",
+                "title":"happy eid",
+                "description":"description 1",
+                "url":"https://frolicking-selkie-98c32f.netlify.app/"
+            },
+            {
+                "image":"flag-india.jpg",
+                "title":"india festival",
+                "description":"description 2",
+                "url":"https://helpful-strudel-cf2e7b.netlify.app/"
+            },
+            {
+                "image":"opened-quran.jpg",
+                "title":"islamic logo",
+                "description":"description 2",
+                "url":"https://luminous-sawine-dc4f60.netlify.app/"
+            },
+            {
+                "image":"festival.png",
+                "title":"festival bootstrap",
+                "description":"description 2",
+                "url":"https://comforting-donut-d056da.netlify.app/"
+            },
+            {
+                "image":"cssportfolio.jpg",
+                "title":"CSS portfolio",
+                "description":"description 2",
+                "url":"https://comforting-sable-61c999.netlify.app/"
+            },
+            {
+                "image":"flowering.jpg",
+                "title":"interior modern",
+                "description":"description 2",
+                "url":"https://fluffy-lollipop-81995f.netlify.app/"
+            },
+            {
+                "image":"camilion.jpeg",
+                "title":"blog animals",
+                "description":"description 2",
+                "url":"https://papaya-peony-45ec93.netlify.app/"
+            },
+            {
+                "image":"scarecrow.png",
+                "title":"404-Not-Found",
+                "description":"description 2",
+                "url":"https://musical-concha-8f2f7b.netlify.app/"
+            }
+    ]
+    
+}
