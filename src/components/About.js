@@ -37,8 +37,8 @@ const About=()=>{
                                         </div>
                                         <div className="col">
                                             <p>Name: Rafik Ncib</p>
-                                            <p>Phone: +216 54-643-238</p>
-                                            <p>Email: Info@Example.Com</p>
+                                            <p>Email: rafikncib@gmail.com</p>
+                                            <p>Email: ncibrafik@gmail.com</p>
                                             <p>Freelance: Available</p>
                                         </div>
                                     </div>
