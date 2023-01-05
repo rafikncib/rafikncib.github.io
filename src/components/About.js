@@ -12,7 +12,7 @@ const About=()=>{
                 <section className="py-4">
                     <div className="row">
                         <div className="col-12 col-md-6 mb-3">
-                            <img src={mypic} alt="my own picture" className="personalPic"/>
+                            <img src={mypic} alt="Rafik Ncib" className="personalPic"/>
                         </div>
                         <div className="col-12 col-md-6">
                             <section>
@@ -42,7 +42,7 @@ const About=()=>{
                                             <p>Freelance: Available</p>
                                         </div>
                                     </div>
-                                    <p><a href={file} className="btn" target="_blank" title="Rafik portfolio">Download CV <span><i className="fas fa-download"></i></span></a></p>
+                                    <p><a href={file} className="btn" target="_blank" rel="noreferrer" title="Rafik portfolio">Download CV <span><i className="fas fa-download"></i></span></a></p>
                                 </div>
                             </section>
                         </div>
