@@ -36,28 +36,50 @@ const Contact=()=>{
   const  handleSubmit=(event)=>{
     event.preventDefault();
     //reset();
-    if(nameReg.test(firstName.input)){
+    if(firstName.input===""){
+      //show erreur
       setFirstName(prevState=>{
-        return {...prevState,'erreur':'invalid firstname'}
+        return {...prevState,'erreur':'firstname cannot be blank !'}
       });
       setIsValidForm(false);
-    }
-    if(nameReg.test(lastName.input)){
+    }else
+        if(!nameReg.test(firstName.input)){
+          setFirstName(prevState=>{
+            return {...prevState,'erreur':'invalid firstname'}
+          });
+          setIsValidForm(false);
+        }
+    if(lastName.input===""){
+      //show erreur
       setLastName(prevState=>{
-        return {...prevState,'erreur':'invalid lastname'}
-      })    
+        return {...prevState,'erreur':'lastname cannot be blank !'}
+      });
       setIsValidForm(false);
-    }
-    if(!validateEmail(email.input.length)){
-      setEmail(prevState=>{
-        return {...prevState,'erreur':'invalid email address'}
-      })    
-      setIsValidForm(false);
-    }
+    }else
+        if(!nameReg.test(lastName.input)){
+          setLastName(prevState=>{
+            return {...prevState,'erreur':'invalid lastname'}
+          })    
+          setIsValidForm(false);
+        }
+        
+        if(email.input===""){
+          //show erreur
+          setEmail(prevState=>{
+            return {...prevState,'erreur':'email cannot be blank !'}
+          });
+          setIsValidForm(false);
+        }else
+            if(!validateEmail(email.input)){
+              setEmail(prevState=>{
+                return {...prevState,'erreur':'invalid email address'}
+              })    
+              setIsValidForm(false);
+            }
 
     if(message.input===''){
       setMessage(prevState=>{
-        return {...prevState,'erreur':'empty message'}
+        return {...prevState,'erreur':'message cannot be blank !'}
       })
       setIsValidForm(false);
     }
@@ -106,23 +128,24 @@ const Contact=()=>{
                     <section className='darckBlue py-3'>
                             <p className='text-center gray sansSerifFont'>If you have any suggestion, project or even you want to say Hello.. please fill out the form below and I will reply you shortly.</p> 
                             <form action='' className='p-4 rounded-2 shadow-lg' onSubmit={handleSubmit} style={styleForm}> 
-                                <div>
+                                <div className='py-2'>
                                   <label htmlFor='firstName' className='form-label'>First name * <span className='text-danger'>{firstName.erreur}</span></label>
-                                  <input name='firstName' id='firstName' value={firstName.input} type='text' placeholder='First Name' className='form-control' onChange={e=>{setFirstName(e.target.value)}}/>
+                                  <input name='firstName' id='firstName' value={firstName.input} type='text' placeholder='First Name' className={`form-control ${firstName.erreur!==''?"border-danger":''}`} onChange={e=>{setFirstName({'input':e.target.value,'erreur':''})}}/>
                                 </div>
 
-                                <div>
-                                  <label htmlFor='lastName' className='form-label'>last name * <span className='text-danger'>{lastName.erreur}</span></label>
-                                  <input name='lastName' id='lastName' value={lastName.input} type='text' placeholder='Last Name' className='form-control' onChange={e=>{setLastName({'input':e.target.value,'erreur':''})}}/>
+                                <div className='py-2'>
+                                  <label htmlFor='lastName' className='form-label'>Last name * <span className='text-danger'>{lastName.erreur}</span></label>
+                                  <input name='lastName' id='lastName' value={lastName.input} type='text' placeholder='Last Name' className={`form-control ${lastName.erreur!==''?"border-danger":''}`} onChange={e=>{setLastName({'input':e.target.value,'erreur':''})}}/>
                                 </div>
                         
-                                <div>
-                                  <label htmlFor='email' className='form-label'>email * <span className='text-danger'>{email.erreur}</span></label>
-                                  <input name='email' value={email.input} id="email" type='email' placeholder='Email' className='form-control' onChange={e=>{setEmail({'input':e.target.value,'erreur':''})}}/>
+                                <div className='py-2'>
+                                  <label htmlFor='email' className='form-label'>Email * <span className='text-danger'>{email.erreur}</span></label>
+                                  <input name='email' value={email.input} id="email" type='email' placeholder='Email' className={`form-control ${email.erreur!==''?"border-danger":''}`} onChange={e=>{setEmail({'input':e.target.value,'erreur':''})}}/>
                                 </div>
-                                <div>
-                                  <label htmlFor='message' className='form-label'>message * <span className='text-danger'>{message.erreur}</span></label>
-                                  <textarea name='message' id='message' rows="4" value={message.input} placeholder='Your message' className='form-control' onChange={e=>{setMessage({'input':e.target.value,'erreur':''})}} >
+
+                                <div className='py-2'>
+                                  <label htmlFor='message' className='form-label'>Message * <span className='text-danger'>{message.erreur}</span></label>
+                                  <textarea name='message' id='message' rows="4" value={message.input} placeholder='Your message' className={`form-control ${message.erreur!==''?"border-danger":''}`} onChange={e=>{setMessage({'input':e.target.value,'erreur':''})}} >
                                   </textarea>
                                 </div>
                                 <button type='submit' className='btn w-100 mt-3'>Send Message</button>
