@@ -1,14 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.9581112e.css",
-    "main.js": "/static/js/main.6de051b0.js",
+    "main.js": "/static/js/main.7705be59.js",
+    "static/media/pict.png": "/static/media/pict.7a524fb3fed85f469438.png",
+    "static/media/opened-quran.jpg": "/static/media/opened-quran.afdb06b6b0de32e665c3.jpg",
     "static/media/rafikWebDeveloppeur_2.pdf": "/static/media/rafikWebDeveloppeur_2.fb4bf9404370024bd681.pdf",
+    "static/media/mypic.jpg": "/static/media/mypic.8053b62edaa5fd1f5d18.jpg",
+    "static/media/flag-india.jpg": "/static/media/flag-india.e897e251a5675aca0ec8.jpg",
     "index.html": "/index.html",
     "main.9581112e.css.map": "/static/css/main.9581112e.css.map",
-    "main.6de051b0.js.map": "/static/js/main.6de051b0.js.map"
+    "main.7705be59.js.map": "/static/js/main.7705be59.js.map"
   },
   "entrypoints": [
     "static/css/main.9581112e.css",
-    "static/js/main.6de051b0.js"
+    "static/js/main.7705be59.js"
   ]
 }
