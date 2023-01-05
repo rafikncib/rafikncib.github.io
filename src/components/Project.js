@@ -1,8 +1,12 @@
-import img from "../assets/images/1.png";
 const Project=(props)=>{
-    console.log("project",props.project);
-    let image = require('../assets/images/'+props.project['image']);
-
+    console.log("project",props.project)
+    let image='';
+       try{
+        image = require('../assets/images/'+props.project['image']);
+    }catch(err){
+        console.log('no image found',err.message);
+    }
+ 
     return(
         <div id="projectContent">
             <div className="project  d-flex align-items-end pointer border border-4 shadow-lg">
