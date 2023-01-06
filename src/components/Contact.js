@@ -7,6 +7,7 @@ const styleForm={
   margin:'auto'
 }
 const Contact=()=>{
+    //declaration
     const [firstName,setFirstName]=useState({
       'input':'',
       'erreur':''
@@ -23,7 +24,6 @@ const Contact=()=>{
       'input':'',
       'erreur':''
     });
-    const [isValidForm,setIsValidForm]=useState(true);
     const [toSend,setToSend]=useState({
     first_name:'',
     last_name:'',
@@ -35,32 +35,34 @@ const Contact=()=>{
 
   const  handleSubmit=(event)=>{
     event.preventDefault();
-    //reset();
+    
+    let isValidForm=true;
     if(firstName.input===""){
       //show erreur
       setFirstName(prevState=>{
         return {...prevState,'erreur':'firstname cannot be blank !'}
       });
-      setIsValidForm(false);
+      isValidForm=false;
     }else
         if(!nameReg.test(firstName.input)){
           setFirstName(prevState=>{
             return {...prevState,'erreur':'invalid firstname'}
           });
-          setIsValidForm(false);
+          isValidForm=false;
         }
     if(lastName.input===""){
       //show erreur
       setLastName(prevState=>{
         return {...prevState,'erreur':'lastname cannot be blank !'}
       });
-      setIsValidForm(false);
+      
+      isValidForm=false;
     }else
         if(!nameReg.test(lastName.input)){
           setLastName(prevState=>{
             return {...prevState,'erreur':'invalid lastname'}
           })    
-          setIsValidForm(false);
+          isValidForm=false;
         }
         
         if(email.input===""){
@@ -68,27 +70,29 @@ const Contact=()=>{
           setEmail(prevState=>{
             return {...prevState,'erreur':'email cannot be blank !'}
           });
-          setIsValidForm(false);
+          isValidForm=false;
         }else
             if(!validateEmail(email.input)){
               setEmail(prevState=>{
                 return {...prevState,'erreur':'invalid email address'}
               })    
-              setIsValidForm(false);
+              isValidForm=false;
             }
 
     if(message.input===''){
       setMessage(prevState=>{
         return {...prevState,'erreur':'message cannot be blank !'}
       })
-      setIsValidForm(false);
+      isValidForm=false;
     }
+
+    
     if(isValidForm){
       setToSend({
-        first_name:firstName,
-        last_name:lastName,
-        message:message,
-        user_email:email
+        first_name:firstName.input,
+        last_name:lastName.input,
+        message:message.input,
+        user_email:email.input
       })
       send(
         'service_jqudv51',
@@ -111,11 +115,7 @@ const Contact=()=>{
     var emailReg = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
     return emailReg.test(email);
   }
-  function reset(){
-    /*setMsgError(
-      {name:'',last:'',email:'',message:''}
-    )*/
-  }
+  
     return(
         <div id="contactContent" className='pt-5'>
             <div className="container pt-5">
@@ -148,7 +148,7 @@ const Contact=()=>{
                                   <textarea name='message' id='message' rows="4" value={message.input} placeholder='Your message' className={`form-control ${message.erreur!==''?"border-danger":''}`} onChange={e=>{setMessage({'input':e.target.value,'erreur':''})}} >
                                   </textarea>
                                 </div>
-                                <button type='submit' className='btn w-100 mt-3'>Send Message</button>
+                                <button type='submit' className='btn bg-black w-100 mt-3'>Send Message</button>
                             </form>
                     </section>
                 </section>

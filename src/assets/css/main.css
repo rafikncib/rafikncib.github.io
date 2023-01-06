@@ -86,7 +86,7 @@
 }
 
 .bg-black {
-  background-color: #040F0F;
+  background-color: #040F0F !important;
 }
 
 .yellow {
@@ -94,7 +94,7 @@
 }
 
 .bg-yellow {
-  background-color: #D16014;
+  background-color: #D16014 !important;
 }
 
 .gray {
@@ -102,7 +102,6 @@
 }
 
 .btn {
-  background-color: #040F0F !important;
   color: #fffbfe !important;
   transition: all 0.5s ease-out !important;
 }

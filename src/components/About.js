@@ -42,7 +42,7 @@ const About=()=>{
                                             <p>Freelance: Available</p>
                                         </div>
                                     </div>
-                                    <p><a href={file} className="btn" target="_blank" rel="noreferrer" title="Rafik portfolio">Download CV <span><i className="fas fa-download"></i></span></a></p>
+                                    <p><a href={file} className="btn bg-black" target="_blank" rel="noreferrer" title="Rafik portfolio">Download CV <span><i className="fas fa-download"></i></span></a></p>
                                 </div>
                             </section>
                         </div>

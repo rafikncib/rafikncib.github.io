@@ -5,20 +5,20 @@
     color: $_secondary_color;
 }
 .bg-black{
-    background-color: $_third_color;
+    background-color: $_third_color !important;
 }
 .yellow{
     color: $_forth_color;
 }
 .bg-yellow{
-    background-color: $_forth_color;
+    background-color: $_forth_color !important;
 }
 .gray{
     color: $_fifth_color;
 }
 
 .btn{
-    background-color:$_third_color !important;
+    //background-color:$_third_color !important;
     color: $_primary_color !important;
     transition: all .5s ease-out !important;
 }
