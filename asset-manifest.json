@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.24bcab64.css",
-    "main.js": "/static/js/main.b5415d21.js",
+    "main.js": "/static/js/main.bc6cb042.js",
     "static/media/pict.png": "/static/media/pict.7a524fb3fed85f469438.png",
     "static/media/flowering.jpg": "/static/media/flowering.338dd2647aa109a9eb59.jpg",
     "static/media/opened-quran.jpg": "/static/media/opened-quran.afdb06b6b0de32e665c3.jpg",
@@ -12,12 +12,13 @@
     "static/media/mypic.jpg": "/static/media/mypic.8053b62edaa5fd1f5d18.jpg",
     "static/media/flag-india.jpg": "/static/media/flag-india.e897e251a5675aca0ec8.jpg",
     "static/media/cssportfolio.jpg": "/static/media/cssportfolio.adf97ac9ab527bace759.jpg",
+    "static/media/todo.jpg": "/static/media/todo.021132b8c917ba3e9240.jpg",
     "index.html": "/index.html",
     "main.24bcab64.css.map": "/static/css/main.24bcab64.css.map",
-    "main.b5415d21.js.map": "/static/js/main.b5415d21.js.map"
+    "main.bc6cb042.js.map": "/static/js/main.bc6cb042.js.map"
   },
   "entrypoints": [
     "static/css/main.24bcab64.css",
-    "static/js/main.b5415d21.js"
+    "static/js/main.bc6cb042.js"
   ]
 }
