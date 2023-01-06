@@ -53,10 +53,10 @@
             ,
             "reactJs":[
                 {
-                    "image":"scarecrow.png",
-                    "title":"404-Not-Found",
+                    "image":"todo.jpg",
+                    "title":"todolist",
                     "description":"description 2",
-                    "url":"https://musical-concha-8f2f7b.netlify.app/"
+                    "url":"https://todolista.onrender.com/"
                 }
             ]
             
