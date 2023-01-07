@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f8895862.css",
-    "main.js": "/static/js/main.4e652482.js",
+    "main.js": "/static/js/main.259b63a3.js",
     "static/media/pict.png": "/static/media/pict.7a524fb3fed85f469438.png",
     "static/media/flowering.jpg": "/static/media/flowering.338dd2647aa109a9eb59.jpg",
     "static/media/opened-quran.jpg": "/static/media/opened-quran.afdb06b6b0de32e665c3.jpg",
@@ -15,10 +15,10 @@
     "static/media/todo.jpg": "/static/media/todo.021132b8c917ba3e9240.jpg",
     "index.html": "/index.html",
     "main.f8895862.css.map": "/static/css/main.f8895862.css.map",
-    "main.4e652482.js.map": "/static/js/main.4e652482.js.map"
+    "main.259b63a3.js.map": "/static/js/main.259b63a3.js.map"
   },
   "entrypoints": [
     "static/css/main.f8895862.css",
-    "static/js/main.4e652482.js"
+    "static/js/main.259b63a3.js"
   ]
 }
