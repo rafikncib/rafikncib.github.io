@@ -100,7 +100,10 @@ a:hover{
 
 
 @media (max-width: 767.98px) { 
-    
+    .size{
+        height: fit-content;
+        width: fit-content;
+    }
     .title_size{
         font-size: $_font_size_title !important;
     }

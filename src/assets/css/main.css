@@ -188,6 +188,14 @@ a:hover {
 }
 
 @media (max-width: 767.98px) {
+  .size {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   .title_size {
     font-size: 2em !important;
   }

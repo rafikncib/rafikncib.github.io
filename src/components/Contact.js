@@ -1,5 +1,5 @@
 import 'animate.css';
-import {send} from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import {useState} from 'react';
 const styleForm={
   minWidth:250,
@@ -24,13 +24,8 @@ const Contact=()=>{
       'input':'',
       'erreur':''
     });
-    const [toSend,setToSend]=useState({
-    first_name:'',
-    last_name:'',
-    message:'',
-    user_email:''
-  });
-
+    
+    const [isMsgSended,setIsMsgSended]=useState(false);
   const nameReg=/^[a-zA-Z-' ]*$/; 
 
   const  handleSubmit=(event)=>{
@@ -88,19 +83,20 @@ const Contact=()=>{
 
     
     if(isValidForm){
-      setToSend({
-        first_name:firstName.input,
-        last_name:lastName.input,
-        message:message.input,
-        user_email:email.input
-      })
-      send(
-        'service_jqudv51',
+      emailjs.send(
+        'service_52vv7t8',
         'contact_form',
-        toSend,
+        {
+          first_name:firstName.input,
+          last_name:lastName.input,
+          message:message.input,
+          user_email:email.input
+        },
         'Jq915bLXBOuC0EaC2'
       )
       .then((response)=>{
+        setIsMsgSended(true);
+        reset()
         console.log('SUCCESS!',response.status,response.text);
       })
       .catch((err)=>{
@@ -110,7 +106,24 @@ const Contact=()=>{
 
   }
 
-  
+  function reset(){
+    setFirstName({
+      'input':'',
+      'erreur':''
+    });
+    setLastName({
+      'input':'',
+      'erreur':''
+    });
+    setEmail({
+      'input':'',
+      'erreur':''
+    });
+    setMessage({
+      'input':'',
+      'erreur':''
+    });
+  }
   function validateEmail(email){
     var emailReg = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
     return emailReg.test(email);
@@ -128,6 +141,10 @@ const Contact=()=>{
                     <section className='darckBlue py-3'>
                             <p className='text-center gray sansSerifFont'>If you have any suggestion, project or even you want to say Hello.. please fill out the form below and I will reply you shortly.</p> 
                             <form action='' className='p-4 rounded-2 shadow-lg' onSubmit={handleSubmit} style={styleForm}> 
+                              {isMsgSended&&<div class="alert alert-success alert-dismissible" role="alert">
+                                <div>Your message has been successful send !</div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              </div>}
                                 <div className='py-2'>
                                   <label htmlFor='firstName' className='form-label'>First name * <span className='text-danger'>{firstName.erreur}</span></label>
                                   <input name='firstName' id='firstName' value={firstName.input} type='text' placeholder='First Name' className={`form-control ${firstName.erreur!==''?"border-danger":''}`} onChange={e=>{setFirstName({'input':e.target.value,'erreur':''})}}/>
