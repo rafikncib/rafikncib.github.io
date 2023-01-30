@@ -2,6 +2,7 @@ import Education from "./Education";
 import { useSelector,useDispatch } from 'react-redux';
 import { educationsExperiencesActions } from '../store/educations_experiences'
 import Skills from "./Skills";
+import Experience from "./Experience";
 const EducExper=()=>{
     //declaration
     const info=useSelector((state)=>state.experiences.info);
@@ -26,7 +27,7 @@ const EducExper=()=>{
                 </header>
                     {info==='educations'&&<Education />}
                     {info==='skills'&& <Skills />}
-                    {info==='experiences'&& <Skills />}
+                    {info==='experiences'&& <Experience />}
             </div>
         </div>
     )

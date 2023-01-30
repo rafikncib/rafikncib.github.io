@@ -134,7 +134,7 @@ const Contact=()=>{
             <div className="container pt-5">
                 <section>
                     <header className="text-center">
-                        <h1 className="black animate__animated animate__fadeInUp section_title">Get <span className="yellow">In Touch</span></h1>
+                        <h1 className="black section_title">Get <span className="yellow">In Touch</span></h1>
                         <p className='sansSerifFont'>FEEL FREE TO GET IN TOUCH WITH ME. I AM ALWAYS OPEN TO DISCUSSING NEW PROJECTS, CREATIVE IDEAS OR OPPORTUNITIES TO BE PART OF YOUR VISIONS.</p>
                     </header>
 

@@ -55,8 +55,14 @@
                 {
                     "image":"todo.jpg",
                     "title":"todolist",
-                    "description":"description 2",
+                    "description":"todolist is a project created using reactjs and bootstrap5. it is a note website. you use it to write what you should do in the future.",
                     "url":"https://montodolist.netlify.app"
+                },
+                {
+                    "image":"",
+                    "title":"guessword",
+                    "description":"guessword is a project created with the use of reactjs, reduxtoolkit and bootstrap5. it is a simple game to guess words.",
+                    "url":"https://superlative-tanuki-1b4ac4.netlify.app/"
                 }
             ]
             

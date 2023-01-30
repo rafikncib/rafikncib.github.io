@@ -5,6 +5,8 @@ const Project=(props)=>{
         image = require("./../assets/images/"+props.project['image']);
     }catch(err){
         console.log('No image found',err.message);
+        image = require("./../assets/images/noimage.png");
+
     }
     console.log(props.project);
 
