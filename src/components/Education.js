@@ -14,7 +14,8 @@ const Education=()=>{
                     </div>
                     <div className="col-12 col-md-4 shadow-lg rounded-2 bg-gray">
                         <p className="gray">2011 - 2014</p>
-                        <p className="text-capitalize">master degree in Computer engineering - <span className="gray sansSerifFont">Faculty of science Gafsa.</span></p>
+                        <p className="text-capitalize">diploma baccalaureate in computer science - <span className="gray sansSerifFont">Secondary high school Cité des Jeunes
+Gafsa.</span></p>
                     </div>
                 </div>    
                 
