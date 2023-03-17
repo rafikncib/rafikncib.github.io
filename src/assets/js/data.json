@@ -64,7 +64,7 @@
                     "image":"signup.jpg",
                     "title":"SIGN UP",
                     "description":"SIGN Up is a page created using Bootstrap5 and ReactJS.",
-                    "url":""
+                    "url":"https://signuuup.netlify.app/"
                 },
                 {
                     "image":"todo.jpg",
